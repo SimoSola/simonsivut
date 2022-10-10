@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simon sivut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <style>
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: black;
+    }
+
+
+    .topnav {
+      position: relative;
+      overflow: visible;
+      background-color: black;}
+    .topnav a {
+      float: left;
+      display: block;
+      color: whitesmoke;
+      padding: 14px 16px;
+      text-decoration: none;}     
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+  width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+    margin-bottom: 20px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 black (88, 18, 18, 0.2);
+      padding: 16px;
+      margin: 5mm;
+      text-align: center;
+      height: 100%;
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header><nav class="topnav"; class="topnav a">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="me.html">Minä</a></li>
+        <li><a href="work.html">Työkokemus</a></li>
+        <li><a href="opinnot.html">Opinnot ja koulutukset</a></li>
+        <li><a href="osaaminen.html">Osaaminen</a></li>
+        <li style="float:right"><a class="active" href="mailto: simo.solantaus@gmail.com">Sähköpostia minulle</a></li>
+        <li style="float:right"><a class="active" href="tel:+358456976440">Soita minulle</i> </a></li>
+      </ul>
+  </nav></header>
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/talvimaisema_1280_400.jpg" alt="Los Angeles" class="d-block" ; style="height:400px; width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/minitalo_1280_400.jpg" alt="Chicago" class="d-block" ; style="height:400px; width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/motto_1280_400.jpg" alt="New York" class="d-block" ; style="height:400px; width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="img/veneily_1280_400.jpg" alt="New York" class="d-block" ; style="height:400px; width:100%">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+<h2 style="text-align: center";>Simo Solantaus </h2>
+
+<div class="row">
+      <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/me_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+          <h3>Minä</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti vero dolor mollitia doloremque alias asperiores! Deleniti, fugiat repudiandae at doloremque, commodi quasi, ipsum cupiditate reprehenderit aliquam reiciendis enim dolore placeat!</p>
+      <a href="me.html" class="btn btn-primary" style="background-color: black; border: black;">Katso lisätietoa</a>
+      </div>
+    </div>
+  
+    <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/up-2081170_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+        <h3>Työkokemus</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo inventore veritatis adipisci illum ipsa nemo, eius qui suscipit laudantium dolores officiis, facere, dignissimos earum architecto nam beatae perspiciatis hic non.</p>
+      <a href="work.html" class="btn btn-primary" style= "background-color: black; border: black;">Katso lisätietoa</a>
+    </div>
+  </div>
+ 
+    <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/open-book-1428428_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+        <h3>Opinnot</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic tenetur exercitationem aperiam quam fugit praesentium similique illo quo repellendus fugiat itaque delectus sed enim, illum magnam error obcaecati laborum.</p>
+      <a href="opinnot.html" class="btn btn-primary" style="background-color: black; border: black;">Katso lisätietoa</a>
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/labyrinth-4397464_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+        <h3>Osaaminen</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe illum dicta incidunt consectetur officia, ut eveniet ullam nobis ducimus neque recusandae quibusdam, harum dignissimos accusamus labore veritatis cumque numquam ad.</p>
+      <a href="osaaminen.html" class="btn btn-primary" style= "background-color: black; border: black;">Katso lisätietoa</a>
+    </div>
+  </div>
+  </div>
+  
+</body>
+</html>
+

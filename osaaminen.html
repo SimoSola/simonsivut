@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simon sivut</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+.header {
+      background-color: black;
+      color: whitesmoke;
+      padding: 0;
+      text-align: center;
+    }
+.topnav {
+      position: relative;
+      overflow: visible;
+      background-color: black;
+    }
+.topnav a {
+      float: left;
+      display: block;
+      color: whitesmoke;
+      padding: 14px 16px;
+      text-decoration: none;
+    } 
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 5mm;
+  height: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<header><nav class="topnav"; class="topnav a">
+  <ul>
+    <li><a href="index.html">Etusivu</a></li>
+    <li><a href="me.html">Minä</a></li>
+    <li><a href="work.html">Työkokemus</a></li>
+    <li><a href="opinnot.html">Opinnot ja koulutukset</a></li>
+    <li><a href="osaaminen.html">Osaaminen</a></li>
+    <li style="float:right"><a class="active" href="mailto: simo.solantaus@gmail.com">Sähköpostia minulle</a></li>
+    <li style="float:right"><a class="active" href="tel:+358456976440">Soita minulle</i> </a></li>
+  </ul>
+</nav></header>
+<body>
+
+<h2 style= "text-align: center">Osaaminen</h2>
+<p style= "text-align: center">Olen nopea oppimaan uusia asioita</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/success-2081168_640.jpg" alt="Card image" style="width:100%">
+      <h3>Osaamisalueet</h3>
+      <p>Tiimityö</p>
+      <p>Henkilöstöjohtaminen</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/hello-1502369_640.png" alt="Card image" style="width:100%">
+      <h3>Kielitaito</h3>
+      <p><b>Englanti:</b>kiitettävä</p>
+      <p><b>Ruotsi:</b>tyydyttävä</p>
+      <p><b>Norja:</b>alkeet</p>
+    </div>
+  </div>
+
+  
+<div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/man-1839500_640.jpg" alt="Card image" style="width:100%">
+      <h3>Tietotekniikka</h3>
+      <p><b>Microsoft Office -ohjelmat:</b> hyvä</p>
+      <p><b>Canva:</b> hyvä</p>
+      <p><b>Photoshop:</b> perusteet</p>
+      <p><b>InDesign:</b> perusteet</p>
+      <p><b>Illustrator:</b> perusteet</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="card-img-top" src="img/id-4157974_640.jpg" alt="Card image" style="width:100%">
+      <h3>Passit, sertifikaatit ja kortit</h3>
+      <p>Ympäristö osaava -ammattilainen ruokapalvelualalla</p>
+      <p>Anniskelupassi</p>
+      <p>Hygieniapassi</p>
+      <p>Ravitsemuspassi</p>
+      <p><b>Ajokortti:</b> B </p>
+    </div>
+  </div>
+  
+</body>
+</html>

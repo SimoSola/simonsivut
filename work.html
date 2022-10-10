@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simon sivut</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+
+.header {
+      background-color: black;
+      color: whitesmoke;
+      padding: 0;
+      text-align: center;}
+.topnav {
+      position: relative;
+      overflow: visible;
+      background-color: black;}
+.topnav a {
+      float: left;
+      display: block;
+      color: whitesmoke;
+      padding: 14px 16px;
+      text-decoration: none;} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: black;
+}
+
+* {box-sizing: border-box;}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+        }
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+        }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;}
+        }
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 5mm;
+  height: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  }
+</style>
+</head>
+<header><nav class="topnav"; class="topnav a">
+  <ul>
+    <li><a href="index.html">Etusivu</a></li>
+    <li><a href="me.html">Minä</a></li>
+    <li><a href="work.html">Työkokemus</a></li>
+    <li><a href="opinnot.html">Opinnot ja koulutukset</a></li>
+    <li><a href="osaaminen.html">Osaaminen</a></li>
+    <li style="float:right"><a class="active" href="mailto: simo.solantaus@gmail.com">Sähköpostia minulle</a></li>
+    <li style="float:right"><a class="active" href="tel:+358456976440">Soita minulle</i> </a></li>
+  </ul>
+</nav></header>
+<body>
+    <h2 style="text-align: center";>Työkokemus</h2>
+    <p style="text-align: center";>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat inventore a dolorum qui molestiae illum exercitationem, culpa quasi in, minus temporibus dignissimos esse quam fuga laborum porro minima doloribus neque.</p>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top"; src="img/event-6927353_400_300.jpg"; alt="Card image"; style="width:100%; margin-bottom: 20px;">
+                <h3>Wellbeing365 Oy / Kyyhkylän kartano</h3>
+                <p>9/21-8/22</p>
+                <p>Myynti- ja markkinointiassistentti</p>
+                <p>Tapahtumatyöntekijä</p>
+                <p>Tarpeen vaatiessa sali-, kokous- ja kahvilatarjoilija, apulaiskokki, astiahuolto sekä
+                   kalusteasentaja</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top" src="img/pastries-2133439_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+                <h3>Barona Horeca Oy (Mikkeli)</h3>
+                <p>7-9/21</p>
+                <p>Baariapulainen</p>
+                <p>Saliapulainen</p>
+                <p>Kahvilatarjoilija</p>
+                <p>Astiahuolto</p> 
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top" src="img/kitchen-4665913_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+                <h3>Suomen Kansallismuseo</h3>
+                <p>08–11/2018 ja 08-10/2019</p>
+                <p>Tapahtuma-avustaja ja museovalvonta (keikkatyö)</p>
+                <p>Tapahtumien kasaus, toteutus ja purku</p>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top" src="img/jutland-1861541_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+                <h3>Oasis Food Oy</h3>
+                <p>07/2013 – 06/2016</p>
+                <p>Kauppias (Punnitse & Säästä-ketju)</p>
+                <p>Asiakassuhteet ja sidosryhmät</p>
+                <p>Markkinointi</p>
+                <p>Talous- ja henkilöstöhallinto</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top" src="img/assortment-1868297_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+                <h3>Deliservice Punnitse & Säästä Oy</h3>
+                <p>08/2010 – 06/2013</p>
+                <p>Myyjä ja myymäläpäällikkö</p>
+                <p>Myynti</p>
+                <p>Asiakaspalvelu</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img class="card-img-top" src="img/mark-516279_400_300.jpg" alt="Card image" style="width:100%; margin-bottom: 20px;">
+                <h3>1995-2020</h3>
+                <p>Lastenhoitaja</p>
+                <p>Tutkimustallentaja</p>
+                <p>Siistijä</p>
+                <p>Infotaulujen sisällöntuotto</p>
+                <p>Lounasravintolan työntekijä</p>
+                <p>Vähittäiskaupan kassa</p>
+            </div>
+        </div> 
+
+</body>
+
+</html>
